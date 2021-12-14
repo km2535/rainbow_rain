@@ -1,0 +1,41 @@
+
+/* 전체 옵션 기본값설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body 옵션 설정 */
+body {
+  background: #000;
+  overflow: hidden;
+  height: 100vh;
+}
+/* i는 비를 의미함. */
+i {
+  position: absolute;
+  height: 200px;
+  background: linear-gradient(transparent, #fff);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: animate 5s linear infinite;
+}
+/* 레인보우 색상을 결정 ㅎ */
+i:nth-child(3n + 1) {
+  background: linear-gradient(transparent, #0ff);
+}
+i:nth-child(3n + 2) {
+  background: linear-gradient(transparent, #0f0);
+}
+i:nth-child(3n + 3) {
+  background: linear-gradient(transparent, #f00);
+}
+/* 애니메이션을 설정함. */
+@keyframes animate {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(calc(100vh + 200px));
+  }
+}
