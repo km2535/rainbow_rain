@@ -6,6 +6,7 @@ function rain(){
     //body 태그 선택, let 변수에 넣기
     let body = document.querySelector('body');
     let i = 0;
+    //i태그가 추가되면서 생성된 i태그의 옵션을 다르게 설정함.
     //양과 i태그를 비교하여 while  불리언 결정
         while(i < amount){
             //i태그를 생성하는데 drop 변수에 넣는다.
@@ -31,7 +32,6 @@ function rain(){
             //조건을 만족할때 i의 개수를 늘려나감.
             i++
         }
-    
 }
 
 //함수 실행
